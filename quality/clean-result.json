@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "revision": "1abccce990101317f7f3237bfc7e36d8dbe41aa9",
+  "checked_at": "2026-11-16T15:44:58.908962+00:00",
+  "clone": "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.runtime\\clean-1794843778532962100",
+  "steps": [
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/Michael/Desktop/m_project/work/mini-booking",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=C:/Users/Michael/Desktop/m_project/work/mini-booking",
+        "clone",
+        "--quiet",
+        "--no-hardlinks",
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking",
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.runtime\\clean-1794843778532962100"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\composer.phar",
+        "install",
+        "--no-interaction",
+        "--prefer-dist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+        "artisan",
+        "key:generate",
+        "--no-interaction"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+        "artisan",
+        "migrate",
+        "--seed",
+        "--no-interaction"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+        "artisan",
+        "db:seed",
+        "--no-interaction"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+        "artisan",
+        "test"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "seeded_slots_after_two_runs": 63,
+  "bookings": 0,
+  "test_output": "{\"tool\":\"phpunit\",\"result\":\"passed\",\"tests\":14,\"passed\":14,\"assertions\":50,\"duration_ms\":615}\n",
+  "uses_shared_portable_php_composer": true,
+  "global_php_install_not_tested": true
+}
