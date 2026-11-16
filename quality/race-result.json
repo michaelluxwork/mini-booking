@@ -1,0 +1,187 @@
+{
+  "started_at_utc": "2026-11-16T15:39:28.072463+00:00",
+  "finished_at_utc": "2026-11-16T15:39:31.875797+00:00",
+  "kind": "real multi-process Laravel HTTP kernel, no listener",
+  "workers_per_round": 4,
+  "rounds": [
+    {
+      "round": 1,
+      "http_statuses": [
+        201,
+        409,
+        409,
+        409
+      ],
+      "active_bookings": 1,
+      "new_process_sees_booking": true,
+      "cancellation_statuses": [
+        204,
+        204
+      ],
+      "new_process_sees_free_slot": true,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "http_statuses": [
+        201,
+        409,
+        409,
+        409
+      ],
+      "active_bookings": 1,
+      "new_process_sees_booking": true,
+      "cancellation_statuses": [
+        204,
+        204
+      ],
+      "new_process_sees_free_slot": true,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "http_statuses": [
+        201,
+        409,
+        409,
+        409
+      ],
+      "active_bookings": 1,
+      "new_process_sees_booking": true,
+      "cancellation_statuses": [
+        204,
+        204
+      ],
+      "new_process_sees_free_slot": true,
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "backend/app/Http/Controllers/BookingController.php": "4ec4992962c0538dea775b647c5d639c8d58662c43491860fd3d3d96ec19f607",
+    "backend/app/Http/Controllers/SlotController.php": "4926defdf263f67951d8639f25b2f1acf91b5ba8b8cdf6a9337909be79fb0c23",
+    "backend/app/Models/Booking.php": "02598bdba5cfeb1a2311e92e668a439c4023afd4b6c1864a5d4d0de417b63e1e",
+    "backend/app/Models/Slot.php": "db73aa7fc7c88918d2a47b28031aa38b756bece1bae319cb5e48f13923e48c2c",
+    "backend/bootstrap/app.php": "ea163bd1dc1b972600b62f69d553785b7a5d111ac13bae78ce1d00ebd865f569",
+    "backend/config/database.php": "f2cda117aa85abf5fd294f028a4f0811d1ba754154d7bac942412c21310f2b79",
+    "backend/routes/api.php": "b439c7a3eda2097356cb7b99cbe7ed720e6af7582873df00c59254232efb10e4",
+    "backend/database/migrations/2026_11_16_150000_create_slots_and_bookings.php": "5d9faf9355da06045e029a65bbc6ad194de067cb7925f67f107f25b4f426169a"
+  },
+  "source_unchanged_during_test": true,
+  "working_database_unchanged": true,
+  "isolated_database": ".runtime\\race-1794843568072463100\\isolated.sqlite",
+  "commands": [
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "artisan",
+      "migrate",
+      "--force",
+      "--no-interaction"
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "create",
+      "1",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.runtime\\race-1794843568072463100\\gate-0"
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "create",
+      "1",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.runtime\\race-1794843568072463100\\gate-1"
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "2",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "2",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "create",
+      "1",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.runtime\\race-1794843568072463100\\gate-2"
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "3",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "delete",
+      "3",
+      ""
+    ],
+    [
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\.tools\\php\\php.exe",
+      "C:\\Users\\Michael\\Desktop\\m_project\\work\\mini-booking\\quality\\kernel-worker.php",
+      "list",
+      "1",
+      ""
+    ]
+  ],
+  "passed": true
+}
