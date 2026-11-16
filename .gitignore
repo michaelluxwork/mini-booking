@@ -1,3 +1,6 @@
 .tools/
 .runtime/
 *.log
+
+# Personal assignment review, separate from application delivery.
+/review/
